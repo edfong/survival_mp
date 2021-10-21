@@ -3,8 +3,6 @@ from setuptools import setup,find_packages
 setup(name='surv_copula',
       version='0.1.0',
       description='Survival Analysis with Copulas',
-      author='Edwin Fong',
-      author_email='edwin.fong@stats.ox.ac.uk',
       license='BSD 3-Clause',
       packages=find_packages(),
       install_requires=[
