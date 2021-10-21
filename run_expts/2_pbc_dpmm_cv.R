@@ -139,7 +139,5 @@ for (i in 1:rep_cv){
   test_ll_cv2[i] <- mean(test_ll)
   
 }
-print(mean(test_ll_cv1))
-print(sd(test_ll_cv1)/sqrt(rep_cv))
-print(mean(test_ll_cv2))
-print(sd(test_ll_cv2)/sqrt(rep_cv))
+print(paste0("Treatment: ",mean(test_ll_cv1), "+-",sd(test_ll_cv1)/sqrt(rep_cv)))
+print(paste0("Treatment: ",mean(test_ll_cv2), "+-",sd(test_ll_cv2)/sqrt(rep_cv)))

@@ -86,8 +86,7 @@ def main_copula_survreg(dataset):
 		print(np.mean(test_ll))
 		test_ll_cv[i] = np.mean(test_ll)
 
-	print("{} +- {}".format(np.mean(test_ll_cv),np.std(test_ll_cv)/np.sqrt(rep_cv)))
+	print("{}: {} +- {}".format(dataset,np.mean(test_ll_cv),np.std(test_ll_cv)/np.sqrt(rep_cv)))
 
-
-main_copula_survreg("kidney")
 main_copula_survreg("melanoma")
+main_copula_survreg("kidney")

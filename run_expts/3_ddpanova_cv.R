@@ -71,9 +71,7 @@ main_ddpanova_cv <- function(dataset){
     }
     test_ll_cv[i] <- mean(test_ll)
   }
-  print(mean(test_ll_cv))
-  print(sd(test_ll_cv)/sqrt(rep_cv))
-  
+  print(paste0(dataset, ": ", mean(test_ll_cv),"+-",sd(test_ll_cv)/sqrt(rep_cv)))
 }
 
 main_ddpanova_cv("melanoma")

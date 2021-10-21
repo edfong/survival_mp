@@ -113,6 +113,6 @@ for i in tqdm(range(rep_cv)):
     test_ll = (delta2_test)*(logpdf_av) + (1-delta2_test)*(np.log1p(-np.exp(logcdf_av)))
     test_ll_cv2[i] = np.mean(test_ll)
 
-print("{} +- {}".format(np.mean(test_ll_cv1),np.std(test_ll_cv1)/np.sqrt(rep_cv)))
-print("{} +- {}".format(np.mean(test_ll_cv2),np.std(test_ll_cv2)/np.sqrt(rep_cv)))
+print("Treatment: {} +- {}".format(np.mean(test_ll_cv1),np.std(test_ll_cv1)/np.sqrt(rep_cv)))
+print("Placebo: {} +- {}".format(np.mean(test_ll_cv2),np.std(test_ll_cv2)/np.sqrt(rep_cv)))
 
