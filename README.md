@@ -12,7 +12,7 @@ This may not work for newer Macs, in which case we recommend using ``pip`` inste
 pip install .
 ```
 
-We recommend to do this in a clean virtual env:
+We recommend creating a clean virtual environment before doing the above:
 ```
 python3 -m venv ~/virtualenvs/survival_copula
 source ~/virtualenvs/survival_copula/bin/activate
@@ -31,9 +31,9 @@ Experiment run scripts are kept in the ```run_expts``` folder, including noteboo
 ```
 python3 1_sim.py
 ```
-The R scripts should be run (in Rstudio or terminal) after the respective Python scripts, as some datasets are simulated/split into the `data` folder by the Python scripts. 
+The R scripts should be run (in Rstudio or terminal) after the respective Python scripts, as some datasets are simulated/split into the `run_expt/data` folder by the Python scripts. 
 
-Outputs from the experiments are stored in `plot_files`, which are then used by the the respective Jupyter notebook with the prefix to produce the plots in the paper and supplementary material. 
+Outputs from the experiments are stored in `run_expt/plot_files`, which are then used by the the respective Jupyter notebook with the prefix to produce the plots in the paper and supplementary material. 
 
 # Data
 We have included the following datasets in `run_expts/data` for convenience:
