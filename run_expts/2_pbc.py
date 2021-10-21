@@ -81,7 +81,7 @@ jnp.save('plot_files/pbc1_a_copula', cop_surv_obj.a_opt)
 
 ## PLACEBO ##
 #Specify a_grid to choose a
-a_grid = np.array([1,1.1,1.2,1.3,1.4,1.5])
+a_grid = np.array([1.1,1.2,1.3,1.4,1.5])
 cop_surv_obj  = fit_copula_survival(t2_norm,delta2, B,a_grid = a_grid)
 print('Nonparametric a is {}'.format(cop_surv_obj.a_opt))
 
