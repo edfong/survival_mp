@@ -19,12 +19,12 @@ source ~/virtualenvs/survival_copula/bin/activate
 ```
 where ```~/virtualenvs``` can be your preferred directory.
 
-# Structure
-All the main functions are in ```surv_copula/copula_survival_functions.py``` for the exponential copula with no covariates, and in  ```surv_copula/copula_survreg_gaussian_functions.py``` for the lognormal copula with covariates.
-
-
+Please check the [JAX](https://github.com/google/jax) page for CPU versus GPU usage and installation instructions. For the paper results, we use the CPU version for reproducibility as GPU calculations can be non-deterministic, and timing was carried out on the GPU version. For full reproducibility of the experiments in the paper, please use the versions `jax==0.2.21` and `jaxlib==0.1.71`. 
 
 The suggested version of R is ≥4.0 for the MCMC examples. Please install the `dirichletprocess` package [here](https://cran.r-project.org/web/packages/dirichletprocess/index.html) and the `ddpanova` package [here](https://web.ma.utexas.edu/users/pmueller/prog.html).
+
+# Structure
+All the main functions are in ```surv_copula/copula_survival_functions.py``` for the exponential copula with no covariates, and in  ```surv_copula/copula_survreg_gaussian_functions.py``` for the lognormal copula with covariates.
 
 # Experiments
 Experiment run scripts are kept in the ```run_expts``` folder, including notebooks to plot. The scripts are prefixed based on the order in which the experiments appear in the paper, and running the Python scripts should involve entering the following in terminal when in the `run_expt` folder, for example:
