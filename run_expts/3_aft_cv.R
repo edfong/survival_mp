@@ -43,8 +43,7 @@ main_aft <- function(dataset){
     test_ll <- pull(delta_test)*logpdf_test + (1- pull(delta_test))*logsurv_test
     test_ll_cv[i] <- mean(test_ll)
   }
-  print(mean(test_ll_cv))
-  print(sd(test_ll_cv)/sqrt(rep_cv))
+  print(paste0(dataset, ": ", mean(test_ll_cv),"+-",sd(test_ll_cv)/sqrt(rep_cv)))
   }
 
 main_aft("melanoma")
