@@ -40,7 +40,7 @@ We have included the following datasets in `run_expts/data` for convenience:
 - PBC (Dickson et al., 1989)
 - Melanoma (Venables & Ripley, 2002)
 - Kidney (Klein et al., 2012)
-- 
+
 The processing script used is provided in `R/process_data.R`.
 
 # References
