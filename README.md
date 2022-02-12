@@ -33,13 +33,14 @@ python3 1_sim.py
 ```
 The R scripts should be run (in Rstudio or terminal) after the respective Python scripts, as some datasets are simulated/split into the `run_expt/data` folder by the Python scripts. 
 
-Outputs from the experiments are stored in `run_expt/plot_files`, which are then used by the the respective Jupyter notebook with the prefix to produce the plots in the paper and supplementary material. 
+Outputs from the experiments are stored in `run_expt/plot_files`, which are then used by the the respective Jupyter notebook with the prefix to produce the plots in the paper and supplementary material. The `run_expt/plot_files` folder may need to be created for the scripts to run.
 
 # Data
 We have included the following datasets in `run_expts/data` for convenience:
 - PBC (Dickson et al., 1989)
 - Melanoma (Venables & Ripley, 2002)
 - Kidney (Klein et al., 2012)
+- 
 The processing script used is provided in `R/process_data.R`.
 
 # References
