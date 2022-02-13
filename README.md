@@ -1,5 +1,5 @@
 # survival_copula
-Martingale posteriors for survival analysis
+This repository contains the code for the experiments in the paper "A Predictive Approach to Bayesian Nonparametric Survival Analysis" by Edwin Fong and Brieuc Lehmann.
 
 # Installation
 
